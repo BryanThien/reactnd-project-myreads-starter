@@ -15,11 +15,11 @@ class BooksApp extends React.Component {
     })
 }
 
-componentDidMount() {
+  componentDidMount() {
     this.getAll();
 }
 
-moveShelf = (book, shelf) => {
+  moveShelf = (book, shelf) => {
   BooksAPI.update(book, shelf);
 
   this.getAll();
