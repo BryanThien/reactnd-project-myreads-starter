@@ -66,6 +66,7 @@ class SearchPage extends Component {
                       <li key={searchedBook.id}>
                         <Book
                           book={searchedBook}
+                          moveShelf={this.props.moveShelf}
                         />
                       </li>
                     ))
